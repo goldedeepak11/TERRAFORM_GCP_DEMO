@@ -103,4 +103,7 @@ Edit
 terraform apply
 Confirm by typing yes.
 
-
+References
+https://www.terraform.io/cli
+https://www.terraform.io/language
+https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference
