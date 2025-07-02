@@ -90,9 +90,9 @@ To execute the Terraform code, go to command prompt and then run the following c
 Caution
 
 Run terraform destroy command with caution as it can destroy all the deployed infrastructure.
----
+```
 
-###  **REFERNCES**
+###  ****REFERNCES****
 https://www.terraform.io/cli
 https://www.terraform.io/language
 https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference
