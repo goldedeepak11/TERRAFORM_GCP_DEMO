@@ -77,31 +77,15 @@ git clone https://github.com/<your-org>/<your-gcp-repo>.git
 
 cd <your-gcp-repo>
 
-2. Initialize Terraform
+TF Code Execution
+To execute the Terraform code, go to command prompt and then run the following commands:
 
-bash
-
-Copy
-
-Edit
-
-terraform init
-
-3. (Optional) Customize variables
-Edit terraform.tfvars or variables.tf if included.
-
-4. Plan the deployment
-bash
-Copy
-Edit
-terraform plan
-
-5. Apply the configuration
-bash
-Copy
-Edit
-terraform apply
-Confirm by typing yes.
+[Required] terraform init # To initialize the terraform working directory.
+[Optional] terraform validate # To validate the terraform configuration.
+[Optional] terraform fmt # To format the terraform configuration to a canonical format and style.
+[Optional] terraform plan # To create an execution plan for terraform configuration files.
+[Required] terraform apply -auto-approve # To execute the actions proposed in a terraform plan to create, update, or destroy infrastructure.
+[Optional] terraform destroy -auto-approve # To destroy the created infrastructure. Specific resources can be destroyed using resource targeting.
 
 References
 https://www.terraform.io/cli
