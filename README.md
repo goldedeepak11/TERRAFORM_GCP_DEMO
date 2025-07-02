@@ -4,25 +4,19 @@ TERRAFORM POC TO CREATE GCP SERVICES
 GCP Terraform tutorial
 This is an introductory repo grouping terraform templates for GCP with best practices.
 
-Prerequisites
-GCP account: You can create one with $300 in free credits
-GCP Service Account with OWNER privilges: Store the service account credentials under creds/secrets.json the file should look like secrets.json.sample.
-Terraform: Version v1.1.7
-Make: Pre-existing for *nix based systems you can install here for windows
-Optional - gcloud CLI
-Usage:
-# Terraform init + get + plan
-make terra-plan DIR_PATH=<path>
-# Example:
-make terra-plan DIR_PATH=./subnets
+# 🌐 GCP Infrastructure with Terraform
 
-# Terraform init + get + apply auto-approve
-make terra-apply DIR_PATH=<path>
-# Example:
-make terra-apply DIR_PATH=./modules
+This repository contains Terraform code to provision core infrastructure on **Google Cloud Platform (GCP)**, including:
 
-# Terraform init + get + destroy auto-approve
-make terra-destroy DIR_PATH=<path>
+- ✅ Compute Engine (GCE) VM
+- ✅ Cloud Storage Bucket
+- ✅ PostgreSQL Cloud SQL Instance
+- ✅ Google Kubernetes Engine (GKE) Cluster
+
+---
+
+## 📁 Repo Structure
+
 # Example:
 make terra-destroy DIR_PATH=./bucket
 Useful Gcloud cli commands:
