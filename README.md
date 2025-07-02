@@ -15,10 +15,15 @@ This repository contains Terraform code to provision core infrastructure on **Go
 
 ---
 ├── main.tf # Terraform config to provision all resources
+
 ├── variables.tf # (Optional) Input variables for flexibility
+
 ├── outputs.tf # (Optional) Outputs like IPs, DB names, etc.
+
 ├── terraform.tfvars # (Optional) Variable values
+
 ├── keys.json # GCP service account key (DO NOT COMMIT)
+
 ├── README.md # Project documentation
 
 markdown
@@ -69,12 +74,19 @@ Edit
 
 ```bash
 git clone https://github.com/<your-org>/<your-gcp-repo>.git
+
 cd <your-gcp-repo>
+
 2. Initialize Terraform
+
 bash
+
 Copy
+
 Edit
+
 terraform init
+
 3. (Optional) Customize variables
 Edit terraform.tfvars or variables.tf if included.
 
@@ -83,29 +95,12 @@ bash
 Copy
 Edit
 terraform plan
+
 5. Apply the configuration
 bash
 Copy
 Edit
 terraform apply
 Confirm by typing yes.
-## 📁 Repo Structure
 
 
-Notes:
-The structure of a Terraform project can vary depending on the needs of the user and the resources being managed, but there are some common elements that are often included. A typical Terraform project may include the following files and directories:
-
-main.tf: This is the main Terraform configuration file, which contains the instructions for building and managing the infrastructure.
-
-variables.tf: This file contains the variables that can be used in the main.tf file, allowing users to parameterize their infrastructure.
-
-outputs.tf: This file contains the output values that are returned by Terraform after the infrastructure has been created.
-
-terraform.tfstate: This file contains the state of the infrastructure managed by Terraform. It is used by Terraform to track the resources it is managing, and it is updated every time Terraform is run.
-
-terraform.tfvars: This file contains the values for the variables defined in variables.tf. These values are used by Terraform when creating the infrastructure.
-
-providers/: This directory contains the configuration files for the provider(s) being used by Terraform. For example, if you are using the AWS provider, there would be a providers/aws.tf file in this directory.
-
-modules/: This directory contains any Terraform modules that are being used in the project. Modules are self-contained packages of Terraform configuration that can be reused in multiple projects.
-This is just an example of a possible project structure. The actual structure of a Terraform project may differ depending on the needs of the user and the resources being managed.
