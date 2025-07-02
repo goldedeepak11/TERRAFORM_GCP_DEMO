@@ -91,7 +91,11 @@ Caution
 
 Run terraform destroy command with caution as it can destroy all the deployed infrastructure.
 
-References
+###  **REFERNCES**
 https://www.terraform.io/cli
 https://www.terraform.io/language
 https://registry.terraform.io/providers/hashicorp/google/latest/docs/guides/provider_reference
+https://registry.terraform.io/providers/hashicorp/google/latest/docs
+https://cloud.google.com/products/calculator
+https://cloud.google.com/sql/docs/postgres
+https://cloud.google.com/kubernetes-engine/docs
